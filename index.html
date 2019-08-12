@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Furniture</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="application/javascript;charset=utf-8" src="libraries/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript;charset=utf-8" src="carousel.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">FURNITURE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#new_arrivals">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stories</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0">Sign Up</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="sale_block">
+            <div class="sale_info">
+                <span>Sale up to 50%</span><br>
+                <span class="sale_header">ON LATEST LIVING ROOM FURNITURES</span><br>
+                <button class="btn btn-success">SHOP NOW</button>
+            </div>
+            <img class="sofa img-fluid" src="assets/sofa.jpg" alt="img_sofa">
+        </div>
+        <h2 class="categories-header"><span class="underline">TO</span>P CATEGORIES</h2>
+        <div class="categories">
+            <div class="bed categories_elem">
+                <a class="gradient" href="#"><img src="assets/bed.jpeg" alt="img_bed"></a><br>
+                <span class="category_name">Bed</span>
+            </div>
+            <div class="lamp_and_clock categories_elem">
+                <a class="gradient" href="#"><img src="assets/lamp.jpg" alt="img_lamp"></a><br>
+                <span class="category_name">Table lamp & Alarm clock</span>
+            </div>
+            <div class="tv categories_elem">
+                <a class="gradient" href="#"><img src="assets/tv.jpg" alt="img_tv"></a><br>
+                <span class="category_name">TV-Units</span>
+            </div>
+            <div class="dining categories_elem">
+                <a class="gradient" href="#"><img src="assets/dining.jpg" alt="img_dining"></a><br>
+                <span class="category_name">Dining</span>
+            </div>
+            <div class="wardrobe categories_elem">
+                <a class="gradient" href="#"><img src="assets/wardrobe.jpg" alt="img_wardrobe"></a><br>
+                <span class="category_name">Wardrobe</span>
+            </div>
+            <div class="office categories_elem">
+                <a class="gradient" href="#"><img src="assets/office.jpg" alt="img_office"></a><br>
+                <span class="category_name">Office table</span>
+            </div>
+        </div>
+        <a name="new_arrivals"><h2><span class="underline">NE</span>W ARRIVALS</h2></a>
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+                <ul>
+                    <li>
+                        <img class="arrival_img" src="assets/chair.jpg" alt="new_chair">
+                    </li>
+                    <li>
+                        <img class="arrival_img" src="assets/armchair.jpg" alt="new_armchair">
+                    </li>
+                    <li>
+                        <img class="arrival_img" src="assets/new_lamp.jpeg" alt="new_lamp">
+                    </li>
+                    <li>
+                        <img class="arrival_img" src="assets/new_bed.jpg" alt="new_bed">
+                    </li>
+                    <li>
+                        <img class="arrival_img" src="assets/new_sofa.jpg" alt="new_sofa">
+                    </li>
+                    <li>
+                        <img class="arrival_img" src="assets/table.jpg" alt="new_table">
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+        </div>
+    </div>
+</body>
+</html>
