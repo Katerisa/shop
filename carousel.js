@@ -5,6 +5,7 @@ $(document).ready(function(){
         margin: 1,
         loop: true,
         items: 4,
+        pagination: false,
         lazyLoad: true,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [980, 2],
@@ -26,8 +27,11 @@ $(document).ready(function(){
         loop: true,
         items: 1,
         navigation: false,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        pagination: true
-    })
+        slideSpeed: 700,
+        autoplay: true
+    });
+    carousel_story.owlCarousel({
+        pagination: true,
+        paginationNumbers: true
+    });
 });

@@ -1,8 +1,16 @@
 :root {
     --pink: #e83e8c;
     --light: #f8f9fa;
+    --light_pink: #f29bc4;
 }
-
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+.underline {
+    border-bottom: 5px solid var(--pink);
+}
+/*Здесь идет шапка страницы*/
 .navbar {
     min-height: 10vh;
     font-size: 24px;
@@ -19,13 +27,7 @@
     background-color: var(--pink);
     border-color: var(--pink);
 }
-.btn-success {
-    background-color: var(--pink);
-}
-.btn-success:hover {
-    background-color: #d91a72;
-    border-color: #d91a72;
-}
+
 .navbar-nav {
     width: 100%;
     padding-right: 5%;
@@ -41,9 +43,11 @@
 .nav-item {
     padding-left: 10px;
 }
+/*Здесь начинаются стили для страницы*/
 .container-fluid {
     padding: 0;
 }
+/*Верхний блок с информацией о скидках*/
 .sale_block {
     display: flex;
     justify-content: space-between;
@@ -61,6 +65,14 @@
     font-weight: bold;
     width: 60%;
 }
+.btn-success {
+    background-color: var(--pink);
+}
+.btn-success:hover {
+    background-color: #d91a72;
+    border-color: #d91a72;
+}
+/*Здесь идет блок с доступными категориями*/
 .categories, h2 {
     padding: 3% 10% 0 10%;
 }
@@ -69,10 +81,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-h2 {
-    font-weight: bold;
-    font-size: 26px;
-}
+
 .categories img {
     width: 250px;
     height: 250px;
@@ -82,9 +91,7 @@ h2 {
     padding-right: 5vw;
     padding-bottom: 5vh;
 }
-.underline {
-    border-bottom: 5px solid var(--pink);
-}
+/*Создается полупрозрачный розовый фон при наведении на изображение категории*/
 .gradient:hover {
     display: inline-block;
     position: relative;
@@ -111,6 +118,7 @@ h2 {
     top: 50%;
     z-index: 100;
 }
+/* 2 карусели для новых товаров и отзывов покупателей*/
 .jcarousel-wrapper, .stories{
     position: relative;
     width: 80%;
@@ -146,7 +154,7 @@ h2 {
     font-family: "Verdana", serif;
     font-style: italic;
 }
-
+/*Стилизации стрелок навигации для первой карусели*/
 .owl-nav {
     position: absolute;
     width: 100%;
@@ -172,17 +180,76 @@ h2 {
 .next:hover, .prev:hover {
     font-size: 4em;
 }
+/*Блок-карусель с отзывами*/
 .story {
     width: 100%;
     background-color: var(--light);
     height: 200px;
 }
-.story_text, .customer_name {
-    margin-left: 10px;
+.story_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+.comment {
+    margin-right: 2em;
 }
 .customer_photo {
     float: left;
     width: 200px;
     height: 200px;
     object-fit: cover;
+    margin-right: 2em;
+}
+.customer_name, .customer_name:before {
+    font-weight: bold;
+}
+.customer_name:before {
+    content: "-";
+}
+.owl-pagination {
+    width: 100%;
+    text-align: center;
+}
+.owl-page {
+    width: 16px;
+    height: 5px;
+    border: 1px solid var(--light_pink);
+    background-color: var(--light_pink);
+    border-radius: 2px;
+    display: inline-block;
+    margin: 5px;
+    transition: background-color .5s ease, transform .5s ease;
+}
+.owl-page.active {
+    background: var(--pink);
+    border-color: var(--pink);
+    transform: scale(1.3);
+}
+/*Здесь идет стилизация полосы прокрутки*/
+.story_text .jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;   /* можно прижать к правому или левому краю */
+    width: 10px;   /* ширина полосы прокрутки */
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+}
+/* полоска, по которой бегает ползунок */
+.story_text .jspTrack {
+    background: var(--light_pink);  /* цвет полосы, или фоновый рисунок  */
+    position: relative;
+    border-radius: 10px;
+}
+/* сам ползунок */
+.story_text .jspDrag {
+    background: var(--pink);  /* цвет ползунка, или фоновый рисунок  */
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border-radius: 10px;
 }
