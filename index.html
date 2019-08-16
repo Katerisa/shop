@@ -5,9 +5,9 @@
     <title>Furniture</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="application/javascript;charset=utf-8" src="libraries/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript;charset=utf-8" src="carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -22,10 +22,10 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#new_arrivals">New Arrivals</a>
+                        <a class="nav-link" href="#new_arrivals_link">New Arrivals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Stories</a>
+                        <a class="nav-link" href="#stories_link">Stories</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -70,33 +70,97 @@
                 <span class="category_name">Office table</span>
             </div>
         </div>
-        <a name="new_arrivals"><h2><span class="underline">NE</span>W ARRIVALS</h2></a>
+        <a id="new_arrivals_link"><h2><span class="underline">NE</span>W ARRIVALS</h2></a>
         <div class="jcarousel-wrapper">
-            <div class="jcarousel" data-jcarousel="true">
-                <ul>
-                    <li>
-                        <img class="arrival_img" src="assets/chair.jpg" alt="new_chair">
-                    </li>
-                    <li>
-                        <img class="arrival_img" src="assets/armchair.jpg" alt="new_armchair">
-                    </li>
-                    <li>
-                        <img class="arrival_img" src="assets/new_lamp.jpeg" alt="new_lamp">
-                    </li>
-                    <li>
-                        <img class="arrival_img" src="assets/new_bed.jpg" alt="new_bed">
-                    </li>
-                    <li>
-                        <img class="arrival_img" src="assets/new_sofa.jpg" alt="new_sofa">
-                    </li>
-                    <li>
-                        <img class="arrival_img" src="assets/table.jpg" alt="new_table">
-                    </li>
-                </ul>
+            <div class="jcarousel">
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/chair.jpg" alt="new_chair"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">White Chair</span><br>
+                        <span class="carousel-element-maker">Hoff</span><br>
+                        <span class="carousel-element-price">$70</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/armchair.jpg" alt="new_armchair"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">Red Armchair</span><br>
+                        <span class="carousel-element-maker">IKEA</span><br>
+                        <span class="carousel-element-price">$120</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/new_lamp.jpeg" alt="new_lamp"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">Lamp</span><br>
+                        <span class="carousel-element-maker">OBI</span><br>
+                        <span class="carousel-element-price">$60</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/new_bed.jpg" alt="new_bed"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">Bed</span><br>
+                        <span class="carousel-element-maker">Hoff</span><br>
+                        <span class="carousel-element-price">$2000</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/new_sofa.jpg" alt="new_sofa"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">Sofa</span><br>
+                        <span class="carousel-element-maker">Luxe</span><br>
+                        <span class="carousel-element-price">$1000</span>
+                    </div>
+                </div>
+                <div class="carousel-element">
+                    <a href="#"><img class="arrival_img" src="assets/table.jpg" alt="new_table"></a>
+                    <div class="signature">
+                        <span class="carousel-element-name">Table</span><br>
+                        <span class="carousel-element-maker">IKEA</span><br>
+                        <span class="carousel-element-price">$600</span>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
-            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+            <div class="owl-nav">
+                <button class="prev">&#8249;</button>
+                <button class="next">&#8250;</button>
+            </div>
+        </div>
+        <a id="stories_link"><h2><span class="underline">CU</span>STOMER STORIES</h2></a>
+        <div class="stories">
+            <div class="carousel-stories">
+                <div class="story">
+                    <img class="customer_photo" src="assets/customer1.jpg">
+                    <p class="story_text">Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla
+                        Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla</p>
+                    <br>
+                    <span class="customer_name">-Patrick Friman</span>
+                </div>
+                <div class="story">
+                    <img class="customer_photo" src="assets/customer2.jpg">
+                    <p class="story_text">Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla
+                        Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla</p>
+                    <span class="customer_name">-Patrick Friman</span>
+                </div>
+                <div class="story">
+                    <img class="customer_photo" src="assets/customer3.jpg">
+                    <p class="story_text">Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla
+                        Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla</p>
+                    <span class="customer_name">-Patrick Friman</span>
+                </div>
+                <div class="story">
+                    <img class="customer_photo" src="assets/customer4.jpg">
+                    <p class="story_text">Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla
+                        Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla Bla bla bla bla bla bla</p>
+                    <span class="customer_name">-Patrick Friman</span>
+                </div>
+            </div>
         </div>
     </div>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>

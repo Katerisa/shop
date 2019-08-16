@@ -1,16 +1,33 @@
-$(function() {
-    $('.jcarousel').jcarousel({
-        visible: 2
-
+$(document).ready(function(){
+    // Находим блок карусели
+    var carousel = $(".jcarousel");
+    carousel.owlCarousel({
+        margin: 1,
+        loop: true,
+        items: 4,
+        lazyLoad: true,
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
+    });
+    // Запускаем плагин карусели
+    carousel.owlCarousel();
+    $(".next").click(function(){
+        carousel.trigger("owl.next");
+    });
+    $(".prev").click(function(){
+        carousel.trigger("owl.prev");
     });
 
-    // Инициализация прокрутки слайдера
-
-    $('.jcarousel-prev').jcarouselControl({
-        target: '-=1'
-    });
-
-    $('.jcarousel-next').jcarouselControl({
-        target: '+=1'
-    });
+    var carousel_story = $(".carousel-stories");
+    carousel_story.owlCarousel( {
+        margin: 1,
+        loop: true,
+        items: 1,
+        navigation: false,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        pagination: true
+    })
 });
