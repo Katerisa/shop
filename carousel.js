@@ -23,7 +23,6 @@ $(document).ready(function(){
 
     var carousel_story = $(".carousel-stories");
     carousel_story.owlCarousel( {
-        margin: 1,
         loop: true,
         items: 1,
         navigation: false,
