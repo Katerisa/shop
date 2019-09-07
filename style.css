@@ -95,6 +95,7 @@ h2 {
 }
 .category_name {
     text-decoration: none;
+    display: block;
     color: black;
 }
 .category_name:hover {
@@ -141,7 +142,6 @@ h2 {
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
-    height: 283px;
 }
 .arrival_img {
     width: 200px;
@@ -229,7 +229,7 @@ h2 {
 }
 
 .carousel-stories .owl-item, .jcarousel .owl-item {
-    margin-left: 0.5px;
+    margin-left: .5px;
 }
 .owl-pagination {
     width: 100%;
