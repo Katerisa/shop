@@ -197,15 +197,16 @@ h2 {
 }
 
 .story_text {
-    height: 100%;
-    overflow: auto;
+    height: 200px;
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
     justify-content: center;
     padding: 0 1em;
 }
 .comment {
+    max-height: 150px;
+    overflow-y: auto;
+    display: block;
     margin: 0;
     padding-bottom: 1em;
 }
