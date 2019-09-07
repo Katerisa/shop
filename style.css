@@ -96,17 +96,18 @@ h2 {
 .category_name {
     text-decoration: none;
     color: black;
+    display: block;
 }
 .category_name:hover {
     color: var(--pink);
 }
 /*Создается полупрозрачный розовый фон при наведении на изображение категории*/
-.gradient:hover {
-    display: inline-block;
+.img-with-gradient:hover {
+    display: block;
     position: relative;
     line-height: 0;
 }
-.gradient:hover:after {
+.img-with-gradient:hover:after {
     content: "";
     display: block;
     width: 100%;
@@ -117,7 +118,7 @@ h2 {
     background-color: var(--pink);
     opacity: 0.8;
 }
-.gradient:hover:before {
+.img-with-gradient:hover:before {
     content: "View more";
     display: inline-block;
     position: absolute;
@@ -152,9 +153,9 @@ h2 {
     width: 210px;
     height: 210px;
 }
-.signature {
-    text-align: left;
-    width: 200px;
+.new-arrivals-info {
+    list-style: none;
+    padding-left: 5px;
 }
 .carousel-element-price {
     font-weight: bold;
@@ -274,9 +275,8 @@ footer {
     color: white;
     padding: 3% 10%;
 }
-.page_footer {
-    display: flex;
-    justify-content: space-around;
+.footer-links-container {
+    list-style: none;
 }
 .footer_column {
     width: 30%;
