@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5338445e-7994-4d61-9516-86a39f146751" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/bg_emailletters.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bg_emailletters2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/carousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scroll/jquery.mousewheel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/scrollPane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resizeFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scroll/jquery.jscrollpane.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scroll/jquery.jscrollpane.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrollPane.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,35 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
+            <state relative-caret-position="17">
+              <caret line="202" column="18" selection-start-line="202" selection-start-column="18" selection-end-line="202" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resizeFunction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrollPane.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="213">
+              <caret line="203" column="21" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -79,6 +65,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>&lt;/li&gt;</find>
+      <find>name</find>
+      <find>h2</find>
+      <find>padding</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div&gt;</replace>
@@ -90,13 +79,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/carousel.js" />
         <option value="$PROJECT_DIR$/scroll/jquery.mousewheel.min.js" />
         <option value="$PROJECT_DIR$/scrollPane.js" />
         <option value="$PROJECT_DIR$/scroll/jquery.mousewheel2.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/resizeFunction.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/carousel.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -187,7 +176,10 @@
       <workItem from="1565420095353" duration="6804000" />
       <workItem from="1565545373424" duration="16419000" />
       <workItem from="1565702381331" duration="14825000" />
-      <workItem from="1565957689682" duration="31486000" />
+      <workItem from="1565957689682" duration="50411000" />
+      <workItem from="1566554454362" duration="15000" />
+      <workItem from="1566840814709" duration="77000" />
+      <workItem from="1567845227835" duration="6491000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;first commit&quot;">
       <created>1565608777779</created>
@@ -200,7 +192,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93521000" />
+    <option name="totallyTimeSpent" value="119029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -213,9 +205,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -227,7 +218,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -277,20 +268,7 @@
     <entry file="file://$PROJECT_DIR$/owl-carousel/owl.carousel.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scroll/jquery.mousewheel.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="3690" column="12" lean-forward="true" selection-start-line="3690" selection-start-column="12" selection-end-line="3690" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scroll/jquery.mousewheel.min.js" />
     <entry file="file://$PROJECT_DIR$/scroll/jquery.mousewheel2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3774">
@@ -301,31 +279,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrollPane.js">
+    <entry file="file://$PROJECT_DIR$/resizeFunction.js" />
+    <entry file="file://$PROJECT_DIR$/scrollPane.js" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="17">
+          <caret line="202" column="18" selection-start-line="202" selection-start-column="18" selection-end-line="202" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resizeFunction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="213">
+          <caret line="203" column="21" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
         </state>
       </provider>
     </entry>

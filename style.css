@@ -3,6 +3,7 @@
     --light: #f8f9fa;
     --light_pink: #f29bc4;
 }
+
 h2 {
     font-weight: bold;
     font-size: 26px;
@@ -20,6 +21,7 @@ h2 {
     border: 1px solid var(--pink);
     border-radius: 20px;
 }
+
 .btn-outline-success {
     color: black;
 }
@@ -57,11 +59,11 @@ h2 {
 }
 .sale_info {
     padding-left: 10%;
-    font-size: 30px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 52px;
 }
 .sale_header {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     width: 60%;
 }
@@ -90,6 +92,13 @@ h2 {
 .categories_elem {
     padding-right: 5vw;
     padding-bottom: 5vh;
+}
+.category_name {
+    text-decoration: none;
+    color: black;
+}
+.category_name:hover {
+    color: var(--pink);
 }
 /*Создается полупрозрачный розовый фон при наведении на изображение категории*/
 .gradient:hover {
@@ -189,9 +198,17 @@ h2 {
 
 .story_text {
     height: 100%;
-    /*padding-top: 2em;*/
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: center;
+    padding: 0 1em;
 }
-
+.comment {
+    margin: 0;
+    padding-bottom: 1em;
+}
 .customer_photo {
     float: left;
     width: 200px;
@@ -199,6 +216,7 @@ h2 {
     object-fit: cover;
     margin-right: 2em;
 }
+
 .comment:before, .comment:after {
     content: '\"';
 }
@@ -208,12 +226,9 @@ h2 {
 .customer_name:before {
     content: "-";
 }
-.customer_name, .comment {
-    margin-bottom: 0;
-    padding-right: 2em;
-}
-.carousel-stories .owl-item {
-    margin-left: 2px;
+
+.carousel-stories .owl-item, .jcarousel .owl-item {
+    margin-left: 0.5px;
 }
 .owl-pagination {
     width: 100%;
@@ -234,28 +249,68 @@ h2 {
     border-color: var(--pink);
     transform: scale(1.3);
 }
-/*Здесь идет стилизация полосы прокрутки*/
-.story_text .jspVerticalBar {
-    position: absolute;
-    top: 0;
-    right: 6px;   /* можно прижать к правому или левому краю */
-    width: 10px;   /* ширина полосы прокрутки */
-    height: 100%;
-    background: red;
-    border-radius: 10px;
+/*Стилизация блока с подпиской*/
+.sign_up {
+    background: url("assets/bg_emailletters.jpg") no-repeat;
+    background-size: 100%;
+    background-position: center 60%;
+    height: 280px;
+    object-fit: cover;
+    text-align: center;
 }
-/* полоска, по которой бегает ползунок */
-.story_text .jspTrack {
-    background: var(--light_pink);  /* цвет полосы, или фоновый рисунок  */
-    position: relative;
-    border-radius: 10px;
+.sign_up .block {
+    background: rgba(235, 235, 235, 0.5);
 }
-/* сам ползунок */
-.story_text .jspDrag {
-    background: var(--pink);  /* цвет ползунка, или фоновый рисунок  */
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    border-radius: 10px;
+.input_email {
+    border-radius: 20px;
+    padding-left: 2em;
+}
+.input_email, .btn-submit {
+    margin-top: 1em;
+}
+/*стилизация футера*/
+footer {
+    background-color: var(--pink);
+    color: white;
+    padding: 3% 10%;
+}
+.page_footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer_column {
+    width: 30%;
+}
+.footer_href {
+    text-decoration: none;
+    color: white;
+}
+.footer_href:hover {
+    color: rgb(199, 24, 59);
+}
+.logo {
+    margin-bottom: 1.5em;
+}
+.footer_header {
+    font-size: 18px;
+    font-weight: bold;
+}
+.copyright {
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+/*Добавление адаптивности*/
+@media screen and (max-width: 760px) {
+    .customer_photo {
+        display: none;
+    }
+    .comment, .customer_name {
+
+    }
+    .sofa {
+        display: none;
+    }
+    .sign_up {
+        height: 250px;
+    }
 }

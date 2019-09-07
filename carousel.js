@@ -2,14 +2,13 @@ $(document).ready(function(){
     // Находим блок карусели
     var carousel = $(".jcarousel");
     carousel.owlCarousel({
-        margin: 1,
         loop: true,
         items: 4,
         pagination: false,
         lazyLoad: true,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [980, 2],
-        itemsTablet: [768, 1],
+        itemsTablet: [768, 2],
         itemsMobile: [479, 1],
     });
     // Запускаем плагин карусели
@@ -27,7 +26,11 @@ $(document).ready(function(){
         items: 1,
         navigation: false,
         slideSpeed: 700,
-        autoplay: true
+        autoplay: true,
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
     });
     carousel_story.owlCarousel({
         pagination: true,
