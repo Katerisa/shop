@@ -96,14 +96,13 @@ h2 {
 .category_name {
     text-decoration: none;
     color: black;
-    display: block;
 }
 .category_name:hover {
     color: var(--pink);
 }
 /*Создается полупрозрачный розовый фон при наведении на изображение категории*/
 .img-with-gradient:hover {
-    display: block;
+    display: inline-block;
     position: relative;
     line-height: 0;
 }
@@ -276,10 +275,12 @@ footer {
     padding: 3% 10%;
 }
 .footer-links-container {
-    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 .footer_column {
     width: 30%;
+    list-style: none;
 }
 .footer_href {
     text-decoration: none;
