@@ -3,10 +3,13 @@
     --light: #f8f9fa;
     --light_pink: #f29bc4;
 }
+body {
+    font-size: 20px;
+}
 
 h2 {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 28px;
 }
 .underline {
     border-bottom: 5px solid var(--pink);
@@ -14,7 +17,7 @@ h2 {
 /*Здесь идет шапка страницы*/
 .navbar {
     min-height: 10vh;
-    font-size: 24px;
+    font-size: 26px;
     padding: 0 10%;
 }
 .btn-outline-success, .btn-success {
@@ -36,7 +39,7 @@ h2 {
 }
 .navbar-light .navbar-brand {
     color: var(--pink);
-    font-size: 24px;
+    font-size: 26px;
     letter-spacing: 2px;
 }
 .navbar-brand:hover {
@@ -80,13 +83,13 @@ h2 {
 }
 .categories {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .categories img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 .categories_elem {
@@ -95,18 +98,19 @@ h2 {
 }
 .category_name {
     text-decoration: none;
+    display: block;
     color: black;
 }
 .category_name:hover {
     color: var(--pink);
 }
 /*Создается полупрозрачный розовый фон при наведении на изображение категории*/
-.gradient:hover {
+.img-with-gradient:hover {
     display: inline-block;
     position: relative;
     line-height: 0;
 }
-.gradient:hover:after {
+.img-with-gradient:hover:after {
     content: "";
     display: block;
     width: 100%;
@@ -117,7 +121,7 @@ h2 {
     background-color: var(--pink);
     opacity: 0.8;
 }
-.gradient:hover:before {
+.img-with-gradient:hover:before {
     content: "View more";
     display: inline-block;
     position: absolute;
@@ -141,20 +145,20 @@ h2 {
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
-    height: 283px;
+    height: 335px;
 }
 .arrival_img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 .arrival_img:hover {
-    width: 210px;
-    height: 210px;
+    width: 270px;
+    height: 270px;
 }
-.signature {
-    text-align: left;
-    width: 200px;
+.new-arrivals-info {
+    list-style: none;
+    padding-left: 5px;
 }
 .carousel-element-price {
     font-weight: bold;
@@ -193,26 +197,27 @@ h2 {
 .story {
     width: 100%;
     background-color: var(--light);
-    height: 200px;
+    height: 250px;
 }
 
 .story_text {
-    height: 100%;
-    overflow: auto;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
     justify-content: center;
     padding: 0 1em;
 }
 .comment {
+    max-height: 150px;
+    overflow-y: auto;
+    display: block;
     margin: 0;
     padding-bottom: 1em;
 }
 .customer_photo {
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     margin-right: 2em;
 }
@@ -228,7 +233,7 @@ h2 {
 }
 
 .carousel-stories .owl-item, .jcarousel .owl-item {
-    margin-left: 0.5px;
+    margin-left: .5px;
 }
 .owl-pagination {
     width: 100%;
@@ -274,12 +279,13 @@ footer {
     color: white;
     padding: 3% 10%;
 }
-.page_footer {
+.footer-links-container {
     display: flex;
     justify-content: space-around;
 }
 .footer_column {
     width: 30%;
+    list-style: none;
 }
 .footer_href {
     text-decoration: none;
@@ -292,7 +298,7 @@ footer {
     margin-bottom: 1.5em;
 }
 .footer_header {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 .copyright {
@@ -303,9 +309,6 @@ footer {
 @media screen and (max-width: 760px) {
     .customer_photo {
         display: none;
-    }
-    .comment, .customer_name {
-
     }
     .sofa {
         display: none;
